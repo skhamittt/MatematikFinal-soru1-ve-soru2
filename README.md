@@ -1,2 +1,30 @@
 # MatematikFinal-soru1-ve-soru2
-Bu program, ikinci dereceden bir denklemin katsayılarını kullanıcıdan almaktadır. Daha sonra diskriminant değerini hesaplayarak köklerin var olup olmadığını belirler. Eğer diskriminant pozitifse iki gerçek kökü, sıfırsa tek gerçek kökü, negatifse gerçek kök olmadığını ekrana yazdırır. Tüm hesaplamalar bilgisayar tarafından otomatik yapılır.
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double a, b, c;
+    cout << "a, b, c katsayilarini giriniz: ";
+    cin >> a >> b >> c;
+
+    double delta = b*b - 4*a*c;
+    cout << "Diskriminant (Δ) = " << delta << endl;
+
+    if (delta < 0) {
+        cout << "Gercek kok yoktur." << endl;
+    }
+    else if (delta == 0) {
+        double x = -b / (2*a);
+        cout << "Tek bir gercek kok vardir: x = " << x << endl;
+    }
+    else {
+        double x1 = (-b + sqrt(delta)) / (2*a);
+        double x2 = (-b - sqrt(delta)) / (2*a);
+        cout << "Iki farkli gercek kok vardir:" << endl;
+        cout << "x1 = " << x1 << endl;
+        cout << "x2 = " << x2 << endl;
+    }
+
+    return 0;
+}
