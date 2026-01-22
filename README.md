@@ -1,12 +1,18 @@
 # MatematikFinal-soru1-ve-soru2
-#include <iostream>
-#include <cmath>
-using namespace std;
+Khamit Sarsenov
+2507020082
+bilgisayar mühendisliği
 
-int main() {
+soru 1:
+
+     #include <iostream>
+     #include <cmath>
+     using namespace std;
+
+    int main() {
     double a, b, c;
-    cout << "a, b, c katsayilarini giriniz: ";
-    cin >> a >> b >> c;
+     cout << "a, b, c katsayilarini giriniz: ";
+     cin >> a >> b >> c;
 
     double delta = b*b - 4*a*c;
     cout << "Diskriminant (Δ) = " << delta << endl;
@@ -27,4 +33,6 @@ int main() {
     }
 
     return 0;
-}
+    }
+
+soru 2: Dosyayı yükledim
